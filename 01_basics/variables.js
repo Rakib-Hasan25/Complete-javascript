@@ -29,7 +29,7 @@ let hi ;
 console.log(hi)//give "undefined"
 
 
-
+console.table([accountCity, hi]) //to see multiple varibles value
 
 
 
