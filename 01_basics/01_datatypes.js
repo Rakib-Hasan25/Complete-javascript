@@ -16,6 +16,32 @@ previous versions of javascript they don't support module , classes and arrow fu
 
 //! datatype(premitive)
 
+
+
+
+//  Primitive
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+
+
+
+
+
+
+
+
+const score = 100 //Number
+const scoreValue = 100.3//Number
+
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail;
+// const bigNumber = 3456543576654356754n
+
+
+
+
 //number => 2 to power 53
 //bigint
 //string =>""
@@ -38,20 +64,6 @@ console.log(id === another)//give false (special behaviour)
 
 
 
-const score = 100 //Number
-const scoreValue = 100.3//Number
-
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail;
-
-
-
-
-// const bigNumber = 3456543576654356754n
-
-
-
 // !data type (non-premitive) 
 // Array,object, functions
 
@@ -71,6 +83,59 @@ console.log(typeof(myFunction)) //object function
 //!important for interview 
 console.log(typeof(null)) //object  --> it is problem in language
 console.log(typeof(undefined))//undefined
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++
+//Stack memory (premitive) , heap memory (non-premitive)
+
+
+
+let rakib = "hiiii"
+let otherrakib = rakib // here "rakib"  give a copy of his value
+console.log(otherrakib)//"hiiii" 
+
+rakib ="o know"
+console.log(rakib)//"o know"
+console.log(otherrakib)//"hiiii"
+
+/*
+"rakib"  give a copy of his value to "otherrakib"
+so when "rakib" value change "otherrakib" value doesn't change
+*/ 
+
+
+
+
+
+
+
+// ++++++
+
+let oke  = {
+    name: "hitesh",
+    age: 22,
+}
+
+//non-premitive datatype object store on heap memory 
+// and oke get an reference of this
+
+let oke22= oke  // "oke" variable share it reference with "oke22"
+
+
+oke.name="rakib" // we change name via "oke"
+
+// now oke.name="rakib" and oke22.name="rakib"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
